@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"log"
 	tf "github.com/tensorflow/tensorflow/tensorflow/go"
 	"github.com/tensorflow/tensorflow/tensorflow/go/op"
-	"log"
 )
 
 func main() {
@@ -24,4 +24,5 @@ func main() {
 		log.Println(err)
 	}
 	fmt.Println(output[0].Value())
+	fmt.Println("OK")
 }
